@@ -1,0 +1,23 @@
+{
+  "name": "remove-teams-from-archive",
+  "version": "1.0.0",
+  "description": "Removes teams and all team mentions from a GitHub migration archive",
+  "main": "remove-teams-from-archive.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/remove-teams-from-archive.git"
+  },
+  "author": "Michael Johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github/remove-teams-from-archive/issues"
+  },
+  "homepage": "https://github.com/github/remove-teams-from-archive#readme",
+  "dependencies": {
+    "commander": "^6.0.0",
+    "fs": "0.0.1-security"
+  }
+}
