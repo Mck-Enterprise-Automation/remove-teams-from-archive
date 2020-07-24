@@ -26,7 +26,7 @@ files.forEach((filename) => {
     fs.writeFileSync('./tmp_archive/' + filename, JSON.stringify(newBranches))
   } else if (filename.includes('issue_events_')) {
     const issueEvents = JSON.parse(fs.readFileSync('./tmp_archive/' + filename))
-    const filteredEvents = issueEvents.filter((event) => !event.subject.includes('/teams/'))
+    const filteredEvents = issueEvents.filter((event) => event.subject === undefined || !event.subject.includes('/teams/'))
 
     fs.writeFileSync('./tmp_archive/' + filename, JSON.stringify(filteredEvents))
   }
